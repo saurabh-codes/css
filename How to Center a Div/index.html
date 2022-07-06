@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS File -->
+    <style>
+        /* Universal Values */
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        /* Parent Div */
+        .parent{
+           width: 100vw;
+           height:100vh;
+           background-color: rgb(93, 149, 19);
+           position: relative;
+           /* "relative" will reserve their Original Space. */
+        }
+
+        /* Child Div */
+        .child{
+           width: 60vw;
+           height: 60vh;
+           background-color: rgb(232, 224, 6);
+           position: absolute;
+           /* "absolute" will not reserv their Original Space. */
+           left: 50%;
+           top: 50%;
+           transform: translate(-50% ,-50%);
+           /*                 X-Axis , Y-Axis */
+           /* The Translate Method Moves an Element from its Current
+            Position (According to the Parameter Given for the X-axis And Y-axis). */
+        }
+        h1{
+            font-size: 2rem;
+        }
+
+    </style>
+
+    <title>How to Center a Div</title>
+</head>
+<body>
+    <!-- Parent Div -->
+    <div class="parent">
+
+        <div class="child">
+            <h1>How To Center a Div.</h1>
+        </div>
+
+    </div>
+      <!-- Parent Div End -->
+</body>
+</html>
